@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DivStudios - Eventos de Minecraft</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="/image/png" href="Images/Logo.png" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- ~ ------------------- Navbar ------------------- -->
+    <header
+      class="navbar is-fixed-top is-primary"
+      style="background-color: #91ff0000"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="/Images/LogoLong.png" alt="Logo" style="max-height: 4rem" class="is-hidden-mobile" onclick="closeNavbar()"/>
+          <img src="/Images/LogoLong.png" alt="Logo" style="max-height: 3rem" class="is-hidden-tablet" onclick="closeNavbar()"/>
+        </a>
+        <!-- Burger icon -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="toggleNavbar()">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <!-- * ------------------- Navbar Menu ------------------- -->
+      <div class="navbar-menu" id="navbarMenu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#AboutUs" onclick="toggleNavbar()">Sobre nosotros</a>
+          <a class="navbar-item" href="#Team" onclick="toggleNavbar()">Equipo</a>
+          <a class="navbar-item" href="#Contact" onclick="toggleNavbar()">Contacto</a>
+          <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
+            <a class="navbar-link" href="/Events" onclick="toggleNavbar()">Eventos</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/Events/NoMansLand">No man's land</a>
+              <a class="navbar-item" href="/Events/FutureEvents">Eventos futuros</a>
+            </div>
+          </div>
+          <a class="navbar-item is-hidden-desktop" href="/Events" onclick="toggleNavbar()">Eventos</a>
+        </div>
+        <div
+          class="navbar-end"
+          style="display: flex; align-items: center; height: 100%"
+        >
+          <a
+            class="button is-warning mr-3 is-hidden-touch"
+            href="https://x.com/DivStudioO/"
+            target="_blank"
+            >Siguenos en Twitter!</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ~ ------------------- Welcome ------------------- -->
+    <section class="hero is-primary is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Bienvenido a DivStudios</h1>
+          <p class="subtitle">
+            Tu puerta de entrada a <strong>eventos de minecraft</strong>!
+            Explora, participa y experimenta lo mejor de minecraft con nosotros!
+          </p>
+          <div class="buttons is-centered">
+            <a class="button is-warning is-rounded py-4" href="/Events"
+              >Explora nuestros eventos!</a
+            >
+            <a
+              class="button is-warning is-outlined is-rounded py-4"
+              href="https://x.com/DivStudioO/"
+              target="_blank"
+              >Siguenos en Twitter!</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~ ------------------- About us ------------------- -->
+    <section class="hero is-danger is-fullheight" id="AboutUs">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Sobre nosotros</h1>
+          <p class="subtitle">
+            Somos un equipo desarrolladores de eventos de minecraft, un nuevo
+            estudio apuntando a lo alto!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~ ------------------- Team ------------------- -->
+    <section class="hero is-warning is-fullheight" id="Team">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Equipo</h1>
+          <p class="subtitle">Descripción para la tercera sección de heroe.</p>
+        </div>
+      </div>
+    </section>
+    <!-- ~ ------------------- Contact ------------------- -->
+    <section class="hero is-primary is-fullheight" id="Contact">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Contacto</h1>
+          <p class="subtitle">
+            Contactanos para cualquier duda, sugerencia o colaboración.
+          </p>
+          <form>
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <label class="label">Nombre</label>
+                  <div class="control">
+                    <input
+                      class="input is-primary"
+                      type="text"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input
+                      class="input is-primary"
+                      type="email"
+                      placeholder="Tu email"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Mensaje</label>
+              <div class="control">
+                <textarea
+                  class="textarea is-primary"
+                  placeholder="Escribe tu mensaje aquí"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="control">
+              <input class="button is-warning" type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~ ------------------- Footer ------------------- -->
+    <footer class="footer pb-6">
+      <div class="content has-text-centered">
+        <p>
+          <strong>DivStudios</strong> © 2024. Todos los derechos reservados. |
+          <a href="#">Política de privacidad</a> |
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

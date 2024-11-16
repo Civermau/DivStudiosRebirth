@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DivStudios - Eventos de Minecraft</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="/image/png" href="Images/Logo.png" />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+   <!-- ~ ------------------- Navbar ------------------- -->
+   <header
+   class="navbar is-fixed-top is-primary"
+   style="background-color: #91ff0000"
+ >
+   <div class="navbar-brand">
+     <a class="navbar-item" href="/">
+       <img src="/Images/LogoLong.png" alt="Logo" style="max-height: 4rem" class="is-hidden-mobile" onclick="closeNavbar()"/>
+       <img src="/Images/LogoLong.png" alt="Logo" style="max-height: 3rem" class="is-hidden-tablet" onclick="closeNavbar()"/>
+     </a>
+     <!-- Burger icon -->
+     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" onclick="toggleNavbar()">
+       <span aria-hidden="true"></span>
+       <span aria-hidden="true"></span>
+       <span aria-hidden="true"></span>
+       <span aria-hidden="true"></span>
+     </a>
+   </div>
+
+   <!-- * ------------------- Navbar Menu ------------------- -->
+   <div class="navbar-menu" id="navbarMenu">
+     <div
+       class="navbar-end"
+       style="display: flex; align-items: center; height: 100%"
+     >
+       <a
+         class="button is-warning mr-3 is-hidden-touch"
+         href="https://x.com/DivStudioO/"
+         target="_blank"
+         >Siguenos en Twitter!</a
+       >
+     </div>
+   </div>
+ </header>
+
+
+    <!-- ~ ------------------- Welcome ------------------- -->
+    <section class="hero is-primary is-fullheight">
+        <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Nuestros eventos!</h1>
+          <p class="subtitle">
+            Explora eventos pasados de los que hemos participado, y eventos
+            futuros que tenemos preparados!
+          </p>
+          <div class="buttons is-centered">
+            <a class="button is-warning is-rounded py-4" href="/#Contact"
+              >Crea tu propio evento</a
+            >
+          </div>
+        </div>
+        </div>
+      </section>
+
+    <!-- ~ ------------------- Footer ------------------- -->
+    <footer class="footer pb-6">
+      <div class="content has-text-centered">
+        <p>
+          <strong>DivStudios</strong> © 2024. Todos los derechos reservados. |
+          <a href="#">Política de privacidad</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

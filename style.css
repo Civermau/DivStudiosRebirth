@@ -1,0 +1,14 @@
+:root {
+  --bulma-primary-h: 273deg;
+  --bulma-primary-s: 82%;
+  --bulma-primary-l: 35%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
