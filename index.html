@@ -114,7 +114,7 @@
           <p class="subtitle">
             Contactanos para cualquier duda, sugerencia o colaboración.
           </p>
-          <form>
+          <form name="contact" netlify>
             <div class="columns">
               <div class="column">
                 <div class="field">
@@ -123,6 +123,7 @@
                     <input
                       class="input is-primary"
                       type="text"
+                      name="name"
                       placeholder="Tu nombre"
                       required
                     />
@@ -136,6 +137,7 @@
                     <input
                       class="input is-primary"
                       type="email"
+                      name="email"
                       placeholder="Tu email"
                       required
                     />
@@ -148,13 +150,14 @@
               <div class="control">
                 <textarea
                   class="textarea is-primary"
+                  name="message"
                   placeholder="Escribe tu mensaje aquí"
                   required
                 ></textarea>
               </div>
             </div>
             <div class="control">
-              <input class="button is-warning" type="submit" value="Enviar" />
+              <button class="button is-warning" type="submit">Enviar</button>
             </div>
           </form>
         </div>
