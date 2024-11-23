@@ -9,3 +9,10 @@ function closeNavbar() {
         navbarMenu.classList.remove('is-active');
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const spans = document.querySelectorAll('.subtitle span');
+  spans.forEach((span, index) => {
+    span.style.animationDelay = `${index * 0.01}s`;
+  });
+});

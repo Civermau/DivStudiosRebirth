@@ -4,18 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DivStudios - Eventos de Minecraft</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/bulma.min.css" />
+    <link rel="stylesheet" href="/styles/animate.min.css" />
+    
     <link rel="icon" type="/image/png" href="Images/Logo.png" />
     <script src="script.js"></script>
   </head>
   <body>
     <!-- ~ ------------------- Navbar ------------------- -->
     <header
-      class="navbar is-fixed-top is-primary"
+      class="navbar is-fixed-top animate__animated animate__fadeInDown"
       style="background-color: #91ff0000"
     >
       <div class="navbar-brand">
@@ -38,14 +38,7 @@
           <a class="navbar-item" href="#AboutUs" onclick="toggleNavbar()">Sobre nosotros</a>
           <a class="navbar-item" href="#Team" onclick="toggleNavbar()">Equipo</a>
           <a class="navbar-item" href="#Contact" onclick="toggleNavbar()">Contacto</a>
-          <div class="navbar-item has-dropdown is-hoverable is-hidden-touch">
-            <a class="navbar-link" href="/Events" onclick="toggleNavbar()">Eventos</a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="/Events/NoMansLand">No man's land</a>
-              <a class="navbar-item" href="/Events/FutureEvents">Eventos futuros</a>
-            </div>
-          </div>
-          <a class="navbar-item is-hidden-desktop" href="/Events" onclick="toggleNavbar()">Eventos</a>
+          <a class="navbar-item" href="/Events" onclick="toggleNavbar()">Eventos</a>
         </div>
         <div
           class="navbar-end"
@@ -62,20 +55,20 @@
     </header>
 
     <!-- ~ ------------------- Welcome ------------------- -->
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">Bienvenido a DivStudios</h1>
-          <p class="subtitle">
-            Tu puerta de entrada a <strong>eventos de minecraft</strong>!
-            Explora, participa y experimenta lo mejor de minecraft con nosotros!
+          <h1 class="title animate__animated animate__fadeInDown" style="font-size: 4rem;">Bienvenido a DivStudios</h1>
+          <p class="subtitle animate__animated">
+            <span>T</span><span>u</span> <span>p</span><span>u</span><span>e</span><span>r</span><span>t</span><span>a</span> <span>d</span><span>e</span> <span>e</span><span>n</span><span>t</span><span>r</span><span>a</span><span>d</span><span>a</span> <span>a</span> <strong><span>e</span><span>v</span><span>e</span><span>n</span><span>t</span><span>o</span><span>s</span> <span>d</span><span>e</span> <span>m</span><span>i</span><span>n</span><span>e</span><span>c</span><span>r</span><span>a</span><span>f</span><span>t</span></strong><span>!</span>
+            <span>E</span><span>x</span><span>p</span><span>l</span><span>o</span><span>r</span><span>a</span><span>,</span> <span>p</span><span>a</span><span>r</span><span>t</span><span>i</span><span>c</span><span>i</span><span>p</span><span>a</span> <span>y</span> <span>e</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>m</span><span>e</span><span>n</span><span>t</span><span>a</span> <span>l</span><span>o</span> <span>m</span><span>e</span><span>j</span><span>o</span><span>r</span> <span>d</span><span>e</span> <span>m</span><span>i</span><span>n</span><span>e</span><span>c</span><span>r</span><span>a</span><span>f</span><span>t</span> <span>c</span><span>o</span><span>n</span> <span>n</span><span>o</span><span>s</span><span>o</span><span>t</span><span>r</span><span>o</span><span>s</span><span>!</span>
           </p>
-          <div class="buttons is-centered">
-            <a class="button is-warning is-rounded py-4" href="/Events"
+          <div class="buttons is-centered animate__animated animate__fadeInUp">
+            <a class="button is-primary is-rounded py-4" href="/Events"
               >Explora nuestros eventos!</a
             >
             <a
-              class="button is-warning is-outlined is-rounded py-4"
+              class="button is-primary is-outlined is-rounded py-4"
               href="https://x.com/DivStudioO/"
               target="_blank"
               >Siguenos en Twitter!</a
@@ -85,7 +78,7 @@
       </div>
     </section>
     <!-- ~ ------------------- About us ------------------- -->
-    <section class="hero is-danger is-fullheight" id="AboutUs">
+    <section class="hero is-fullheight" id="AboutUs">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">Sobre nosotros</h1>
@@ -98,7 +91,7 @@
     </section>
 
     <!-- ~ ------------------- Team ------------------- -->
-    <section class="hero is-warning is-fullheight" id="Team">
+    <section class="hero is-fullheight" id="Team">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">Equipo</h1>
@@ -107,7 +100,7 @@
       </div>
     </section>
     <!-- ~ ------------------- Contact ------------------- -->
-    <section class="hero is-primary is-fullheight" id="Contact">
+    <section class="hero is-fullheight" id="Contact">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">Contacto</h1>

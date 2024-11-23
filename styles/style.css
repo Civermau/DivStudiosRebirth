@@ -1,0 +1,40 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-item:hover {
+  background-color: transparent;
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-link:hover {
+  background-color: transparent;
+}
+
+.navbar-menu {
+  background-color: transparent !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.subtitle span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
