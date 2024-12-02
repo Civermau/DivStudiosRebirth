@@ -1,0 +1,19 @@
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.WelcomeSub span {
+  opacity: 0;
+  display: inline-block;
+}
+
+.footer {
+  background-color: #00010c !important;
+}

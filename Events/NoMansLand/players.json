@@ -1,0 +1,46 @@
+{
+  "players": [
+    {
+      "username": "RandoMike",
+      "quote": "¡Ponme putas, por favor!",
+      "twitch": "randomaik",
+      "status": "admin"
+    },
+    {
+      "username": "El_Divier",
+      "quote": "Me funan por todo",
+      "twitch": "eldivier",
+      "status": "admin"
+    },
+    {
+      "username": "Eriphantomhive",
+      "quote": "Croissant",
+      "twitch": "eriphantomhive",
+      "status": "admin"
+    },
+    {
+      "username": "Don_Andriuw",
+      "quote": "Me gusta Mau",
+      "twitch": "don_andriuw",
+      "status": "alive"
+    },
+    {
+      "username": "LordM4",
+      "quote": "Puta",
+      "twitch": "lord_m4",
+      "status": "dead"
+    },
+    {
+      "username": "Aguacate",
+      "quote": "El pendejo",
+      "twitch": "aguacate",
+      "status": "dead"
+    },
+    {
+      "username": "Silver",
+      "quote": "Ya vamonos ya llegó silver",
+      "twitch": "silver",
+      "status": "dead"
+    }
+  ]
+} 
