@@ -1,12 +1,18 @@
 html, body {
   scroll-behavior: smooth;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
+  margin: 100;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+  border-radius: 10px;
 }
 
 html::-webkit-scrollbar {
   display: none;
+}
+
+#Welcome {
+  margin-top: 45px;
+  margin-bottom: -75px;
 }
 
 .WelcomeSub span {
@@ -14,6 +20,27 @@ html::-webkit-scrollbar {
   display: inline-block;
 }
 
-.footer {
-  background-color: #00010c !important;
+#Team .hero-body {
+  padding-top: calc(82px) !important; /* adjust to the height of your top navbar */
+  padding-bottom: calc(1000px) !important; /* adjust to the height of your footer */
+}
+
+.spacer {
+  height: 500px; /* adjust to the desired space between sections */
+}
+
+.policy-title {
+  margin-top: 60px;
+}
+
+.policy-answer {
+  margin-top: -22.5px;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+.policy-list {
+  margin-top: -22.5px;
+  margin-bottom: 35px;
+  margin-left: 75px;
 }
