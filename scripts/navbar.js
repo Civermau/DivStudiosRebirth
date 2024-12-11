@@ -25,3 +25,28 @@ function closeNavbar() {
         navbarMenu.classList.remove('is-active');
     }
 }
+
+window.addEventListener('hashchange', () => {
+    const sectionId = window.location.hash.substring(1);
+    if (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+
+  // Also, scroll to the section on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const sectionId = window.location.hash.substring(1);
+    if (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
