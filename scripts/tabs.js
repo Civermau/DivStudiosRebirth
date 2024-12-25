@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 tabContent.innerHTML = '<p>Lista de mods aquí...</p>';
                 break;
             case 'Información general':
-                tabContent.innerHTML = '<p>Información general aquí...</p>';
+                tabContent.innerHTML = '<img src="/Images/GeneralInfo.png" alt="Rules Image">';
                 break;
         }
     }
