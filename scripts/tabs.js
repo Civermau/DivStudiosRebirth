@@ -36,13 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 break;
             case 'Reglas':
-                tabContent.innerHTML = '<img src="/Images/Rules.png" alt="Rules Image">';
+                tabContent.innerHTML = '<img src="/Images/NoMansLand/Rules.png" alt="Rules Image">';
                 break;
             case 'Mods':
                 tabContent.innerHTML = '<p>Lista de mods aquí...</p>';
                 break;
             case 'Información general':
-                tabContent.innerHTML = '<img src="/Images/GeneralInfo.png" alt="Rules Image">';
+                tabContent.innerHTML = '<img src="/Images/NoMansLand/GeneralInfo.png" alt="Rules Image">';
                 break;
         }
     }
