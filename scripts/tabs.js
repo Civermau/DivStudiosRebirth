@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const start = (page - 1) * pageSize;
             const end = start + pageSize;
             const playersPage = players.slice(start, end);
-    
+            
             // Clear the player grid
             playerGrid.innerHTML = '';
-    
+            
             playersPage.forEach(player => {
                 const playerCard = `
                     <a href="https://twitch.tv/${player.twitch}" 
@@ -118,16 +118,15 @@ document.addEventListener('DOMContentLoaded', function() {
                             <img src="https://mc-heads.net/avatar/${player.username}" 
                                  alt="${player.username}'s avatar">
                             <h3 class="player-name">${player.username}</h3>
-                            <p class="player-quote">"${player.quote}"</p>
                         </div>
                     </a>
                 `;
                 playerGrid.innerHTML += playerCard;
             });
-    
+            
             prevButton.className = 'prev-button';
             nextButton.className = 'next-button';
-
+        
             tabContent.innerHTML = '';
             tabContent.appendChild(playerGrid);
         }
