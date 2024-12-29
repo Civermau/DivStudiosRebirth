@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add "Anterior" button
         const prevButton = document.createElement('a');
         prevButton.href = '#';
-        prevButton.textContent = 'Anterior';
+        prevButton.textContent = '⪻';
         prevButton.addEventListener('click', (event) => {
         event.preventDefault(); // Add this line
         const currentPage = page > 1 ? page - 1 : 1;
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add "Siguiente" button
         const nextButton = document.createElement('a');
         nextButton.href = '#';
-        nextButton.textContent = 'Siguiente';
+        nextButton.textContent = '⪼';
         nextButton.addEventListener('click', (event) => {
         event.preventDefault(); // Add this line
         const currentPage = page < totalPages ? page + 1 : totalPages;
