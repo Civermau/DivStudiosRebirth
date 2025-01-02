@@ -62,10 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
                             image: 'https://media.forgecdn.net/attachments/393/726/screenshot4.png',
                         },
                         {
-                            image: '/Images/Mods/1.png',
+                            image: '/Images/NoMansLand/Mods/1.png',
                         },
                         {
-                            image: '/Images/Mods/2.png',
+                            image: '/Images/NoMansLand/Mods/2.png',
                         },
                         {
                             image: 'https://i.tlauncher.org/images/emotecraft-mod-screenshots-2.jpg',
@@ -80,13 +80,13 @@ document.addEventListener('DOMContentLoaded', function() {
                             image: 'https://media.forgecdn.net/attachments/903/124/morearmors-1.png',
                         },
                         {
-                            image: '/Images/Mods/3.jpg',
+                            image: '/Images/NoMansLand/Mods/3.jpg',
                         },
                         {
-                            image: '/Images/Mods/4.png',
+                            image: '/Images/NoMansLand/Mods/4.png',
                         },
                         {
-                            image: '/Images/Mods/5.webp',
+                            image: '/Images/NoMansLand/Mods/5.webp',
                         },
                         {
                             image: 'https://media.forgecdn.net/attachments/description/547224/description_89313efd-bb4d-48e6-bd61-414b3eda4a85.png',
