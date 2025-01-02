@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'Mods':
                     const carousel = document.createElement('div');
                     carousel.id = 'mods-carousel';
-                    carousel.classList.remove('animate__animated', 'animate__slideInUp');
-                    carousel.classList.add('animate__animated', 'animate__slideInUp');
+                    carousel.classList.remove('animate__animated', 'animate__fadeIn');
+                    carousel.classList.add('animate__animated', 'animate__fadeIn');
         
                     const carouselItems = [
                         {
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             image: 'https://media.forgecdn.net/attachments/300/239/skrin-gejmpleya-2.png',
                         }
                     ];
-        
+
                     carouselItems.forEach(item => {
                         const carouselItem = document.createElement('div');
                         carouselItem.classList.add('carousel-item');
@@ -113,10 +113,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         carouselItem.appendChild(carouselImage);
                         carousel.appendChild(carouselItem);
                     });
-        
+
                     tabContent.innerHTML = '';
                     tabContent.appendChild(carousel);
         
+                    const description = document.createElement('p');
+                    description.innerHTML = 'Este es el modpack del evento para que puedas disfrutar de la experiencia cuando desees. Puedes descargarlo <a href="https://www.mediafire.com/file/qullnpabf5tka4u/NoMan%2527sLand.gz/file">aquí</a>.';
+                    description.classList.add('description-text');
+                    tabContent.appendChild(description);
+
                     tabContent.classList.add('carousel-container');
 
                     bulmaCarousel.attach('#mods-carousel', {
@@ -125,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         infinite: true,
                         autoplay: true,
                     });
-
                     break;
 
                 case 'Información general':
@@ -206,12 +210,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const end = start + pageSize;
             const playersPage = players.slice(start, end);
             
-            // Clear the player grid
-            playerGrid.innerHTML = '';
-            
+        // Clear the player grid
+        playerGrid.innerHTML = '';
+    
             playersPage.forEach(player => {
                 const playerCard = `
-                    <a href="${player.twitch ? `https://twitch.tv/${player.twitch}` : `https://www.youtube.com/${player.youtube}`}"
+                    <a href="${player.twitch ? `https://twitch.tv/${player.twitch}` : player.youtube ? `https://www.youtube.com/${player.youtube}` : 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}"
                        target="_blank"
                        class="player-card animate__animated animate__fadeInUp ${player.status}"
                        rel="noopener noreferrer">
