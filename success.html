@@ -16,7 +16,14 @@
     <script src="/scripts/navbar.js"></script>
     <script src="/scripts/animations.js"></script>
   </head>
-  <body style="background-color: #02000f">
+  <body>
+    <div id="particles-js"></div>
+
+    <!-- Include particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Include particles configuration -->
+    <script src="/scripts/particles-config.js"></script>
     <!-- ~ ------------------- Navbar ------------------- -->
     <header class="navbar is-fixed-top animate__animated animate__fadeInDown">
       <div class="navbar-brand">
@@ -50,18 +57,18 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <!-- * ------------------- Navbar Menu ------------------- -->
     </header>
-    <section class="hero animate__animated animate__fadeInDown" style="min-height: calc(111vh - 6rem - 6rem);">
-        <div class="hero-body" style="background-image: url('/Images/Sucess.jpg'); background-size: cover; background-position: center;">
-        <div class="container" style="margin-top: 6.5rem;">
-          <h1 class="title">¡Mensaje enviado con éxito!</h1>
-          <div class="space" style="height: 20px !important;"></div>
-          <p class="subtitle">
-            Gracias por contactarnos. Nos pondremos en contacto contigo lo antes posible.
-          </p>
+    <section class="hero is-fullheight animate__animated animate__fadeInDown" style="justify-content: center; align-items: center;">
+        <div class="hero-body" style="background-size: cover; background-position: center;">
+          <div class="container" style="text-align: center;">
+            <h1 class="title">¡Mensaje enviado con éxito!</h1>
+            <div class="space" style="height: 20px !important;"></div>
+            <p class="subtitle">
+              Gracias por contactarnos. Nos pondremos en contacto contigo lo antes posible.
+            </p>
+            <button class="button is-warning is-large" onclick="window.location.href = '/';">Volver al inicio</button>
+          </div>
         </div>
-      </div>
     </section>
     <!-- ~ ------------------- Footer ------------------- -->
     <footer class="footer pb-6">

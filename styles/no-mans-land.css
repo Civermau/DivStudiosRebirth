@@ -1,4 +1,3 @@
-
 .player-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -29,11 +28,18 @@
     border-color: rgba(0, 255, 0, 0.4);
 }
 
+.player-card.winner {
+    border-color: rgba(255, 217, 0, 0.801); /* Gold border */
+    background-color: rgba(255, 217, 0, 0.1);
+}
+
 .player-card img {
     width: 80px;
     height: 80px;
     border-radius: 10px;
     margin-bottom: 1rem;
+    background-image: url('https://png.pngtree.com/png-clipart/20220709/ourmid/pngtree-crazy-drip-blood-effect-png-image_5854396.png');
+    background-size: cover;
 }
 
 .player-name {
@@ -119,4 +125,48 @@
   .carousel-item img {
     border-radius: 20px; /* add a 10px border radius to the images */
   }
-  
+
+  .player-card.dead .player-card-inner {
+    position: relative;
+  }
+
+  .player-card.dead img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .player-card.dead .overlay {
+    position: absolute;
+    top: 0;
+    left: 1;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    background-image: url('/images/blood.png');
+    background-size: cover;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .player-card.winner .player-card-inner {
+    position: relative;
+  }
+
+  .player-card.winner img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .player-card.winner .overlay {
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    width: 120px;
+    height: 80px;
+    background-image: url('/images/crown.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+    pointer-events: none;
+  }
+
